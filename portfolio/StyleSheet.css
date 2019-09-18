@@ -13,6 +13,10 @@
     overflow: hidden;
 }
 
+.button {
+
+}
+
 #showcase {
     background-image: url('Images/Blazoen.jpg');
     background-position: center;
@@ -27,13 +31,6 @@
     line-height: 1.6em;
     padding-top: 20px;
 }
-
-/*#showcase h1 {
-    color: #fff;
-    font-size: 50px;
-    line-height: 1.6em;
-    padding-top: 30px;
-}*/
 
 #main {
     float: left;
@@ -57,4 +54,32 @@
     text-align: center;
     padding: 20px;
     margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+}
+
+.button:hover {
+    background: red;
+    color: #fff;
 }
