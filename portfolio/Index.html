@@ -14,7 +14,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="Main.html">Smart Industry</a>
+        <a class="navbar-brand" href="Index.html">Smart Industry</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,6 +26,7 @@
                 <a class="nav-item nav-link" data-toggle="tab" href="#connection" id="connection-tab" role="tab" aria-controls="connection" aria-selected="true">Connection</a>
                 <a class="nav-item nav-link" data-toggle="tab" href="#technology" id="technology-tab" role="tab" aria-controls="technology" aria-selected="true">Technology</a>
                 <a class="nav-item nav-link" data-toggle="tab" href="#project" id="project-tab" role="tab" aria-controls="project" aria-selected="true">Project</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#Contact" id="Contact-tab" role="tab" aria-controls="Contact" aria-selected="true">Contact</a>
             </div>
         </div>
     </nav>
@@ -40,36 +41,23 @@
             <div class="container">
                 <section id="main">
                     <h1>Portfolio Jan Reuvers</h1>
-                    <p>
-                        Fijn dat je een kijkje neemt in mijn portfolio!<br>
-                        <hr>
-                        <div class="container">
-                            <h3>Mijn sport pagina's</h3>
-                            <list>
-                                    <ul>
-                                        <li>
-                                            <a href="https://hbvstaddijk.nl/" target="_blank">Link naar mijn handboog club</a>
+                    <p>Fijn dat je een kijkje neemt in mijn portfolio!<br></p>
+                    <hr>
+                    <h3>Mijn sport pagina's</h3>
+                    <ul>
+                        <li>
+                            <a href="https://hbvstaddijk.nl/" target="_blank">Link naar mijn handboog club</a>
 
-                                        </li>
-                                        <li>
-                                            <a href="https://www.nijmeegseschaatsvereniging.nl/index.php?page=7&sid=3" target="_blank">Link naar mijn shorttrack club</a>
+                        </li>
+                        <li>
+                            <a href="https://www.nijmeegseschaatsvereniging.nl/index.php?page=7&sid=3" target="_blank">Link naar mijn shorttrack club</a>
 
-                                        </li>
-                                    </ul>
-                                </list>
+                        </li>
+                    </ul>
 
-                        </div>
-                    </p>
+                    
                 </section>
-                <aside id="blackContainer">
-                    <h1>Contactgegevens</h1>
-                    <p>
-                        Plaats: Wijchen<br>
-                        Opleiding: industiële automatisering<br>
-                        vooropleiding: Electrotechniek BOL4<br>
-                        Telefoon: +31 610802914
-                    </p>
-                </aside>
+                
             </div>
 
             <video width="400" controls>
@@ -114,8 +102,27 @@
             </p>
 
             <button type="button" onclick="JavaGetDate()"> Click me to display Date and Time.</button>
-            <p id="CurrentTime"></p>
+            <div id="CurrentTime">
+                <p> Klik op de knop om de tijd te zien</p>
+            </div>
             
+
+            <p>Is het tijd voor bier?<br> </p>
+
+            <script type="text/javascript">
+                //BeerTime();
+                var d = new Date()
+                var hour = d.getHours();
+                if (hour >= 15 || hour <= 7) {
+                    document.getElementById('ItIsTime').innerHTML = "<h2>Het is tijd voor bier! Proost!</h2>"
+                }
+                else {
+                    document.getElementById('ItIsTime').innerHTML = "<h2>Helaas, het is nog geen tijd voor bier. Het is nog te vroeg</h2>"
+                }
+            </script>
+
+            <div id="ItIsTime"><h2>werkt dit?</h2> </div>
+
             <hr>
 
             <h3>week 2: begin van HTML gemaakt</h3>
@@ -145,6 +152,17 @@
         </div>
         <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
             <p>I'm in Project</p>
+        </div>
+        <div class="tab-pane fade" id="Contact" role="tabpanel" aria-labelledby="Contact-tab">
+            <aside id="blackContainer">
+                <h1>Contactgegevens</h1>
+                <p>
+                    Plaats: Wijchen<br>
+                    Opleiding: industiële automatisering<br>
+                    vooropleiding: Electrotechniek BOL4<br>
+                    Telefoon: +31 610802914
+                </p>
+            </aside>
         </div>
     </div>
 
