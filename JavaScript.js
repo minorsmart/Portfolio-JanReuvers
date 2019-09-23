@@ -12,10 +12,9 @@ function BeerTime() {
     var d = new Date()
     var hour = d.getHours();
     if (hour >= 15 || hour <= 7) {
-        document.getElementById('ItIsTime').innerHTML = "alt='ja'/><h2>Het is tijd voor bier! Proost!</h2>"
+        document.getElementById('ItIsTime').innerHTML = "<p>Het is tijd voor bier! Proost!</p>"
     }
     else {
-        document.getElementById('ItIsTime').innerHTML = "alt='nee'/><h2>Helaas, het is nog geen tijd voor bier. Het is nog te vroeg</h2>"
+        document.getElementById('ItIsTime').innerHTML = "<p>Helaas, het is nog geen tijd voor bier. Het is nog te vroeg</p>"
     }
-
 }
