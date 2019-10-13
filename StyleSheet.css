@@ -1,4 +1,5 @@
-﻿body {
+﻿
+body {
     background-color: #f4f4f4;
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
@@ -7,17 +8,12 @@
     margin: 0;
 }
 
-h1 {
-    /*color: violet;
-    text-align: center;*/
-}
-
-h2 {
-    /*color: rgb(248, 56, 98);*/
-}
-
-h3 {
-    /*color: rgb(56, 123, 248);*/
+#main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
 
 p {
@@ -26,14 +22,51 @@ p {
     font-size: 20px;*/
 }
 
-.container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+h2 {
+    /*background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 1.6em;*/
+    margin: 0;
+}
+h3 {
+    /*background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 1.6em;*/
+    margin: 0;
+}
+h4 {
+    /*background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;*/
+    margin: 0;
+}
+h5 {
+    /*background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.6em;*/
+    margin: 0;
+}
+h6 {
+    /*background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.6em;*/
+    margin: 0;
 }
 
-.button {
-
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 #showcase {
@@ -51,115 +84,89 @@ p {
     padding-top: 20px;
 }
 
-#main {
-    float: left;
-    width: 100%;
-    padding: 0 30px;
-    box-sizing: border-box;
-}
+/*#region Navigation */
 
-#blackContainer {
-    float: right;
-    width: 35%;
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    box-sizing: border-box;
-}
+    /* Style the navigation bar */
+    .navbar {
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+    }
 
-#main-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
+    /* Navbar links */
+    .navbar a {
+        float: left;
+        text-align: center;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
+    /* Navbar links on mouse-over */
+    .navbar a:hover {
+        background-color: #555;
+    }
 
-a:hover {
-    color: red;
-}
+    /* Current/active navbar link */
+    .active {
+        background-color: #4CAF50;
+    }
 
-a:active {
-    color: green;
-}
+    /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+    @media screen and (max-width: 500px) {
+        .navbar a {
+            float: none;
+            display: block;
+        }
+    }
 
-a:visited {
-}
+/*#endregion */
 
-.ConWeek2 {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 10px;
-    border: none;
-}
 
-.ConWeek2:hover {
-    background: red;
-    color: #fff;
-}
+/*#region Collapsible */
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-    background-color: #555;
-    color: #f4f4f4;
-    cursor: pointer;
-    padding: 8px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-}
+    /* Style the button that is used to open and close the collapsible content */
+    .collapsible {
+        background-color: #555;
+        color: #f4f4f4;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.collapsible.active, .collapsible:hover {
-    background-color: #f4f4f4;
-    color: #000;
-}
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .collapsible.active, .collapsible:hover {
+            background-color: #f4f4f4;
+            color: #555;
+        }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
+    /* Style the collapsible content. Note: hidden by default */
+    .content {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
 
-.collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-}
+    .collapsible:after {
+    
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
 
-.collapsible.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
+    .collapsible.active:after {
+        content: "\2212"; /* Unicode character for "minus" sign (-) */
+        color: #555;
+    }
 
-#weatherBody {
-    background-color: white;
-    color: #555;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.6em;
-    margin: 0;
-}
 
-weatherBody.sunny {
-    background-image: linear-gradient(to right top, #ff4e50, #ff713e, #ff932b, #ffb41d, #f9d423);
-}
-
-weatherBody.cloudy {
-    background-image: linear-gradient(to right top, #63747c, #71858e, #7f96a0, #8da8b2, #9bbac5);
-}
-
-weatherBody.rainy {
-    background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
-}
+/*#endregion */
