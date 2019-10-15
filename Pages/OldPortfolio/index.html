@@ -1,0 +1,954 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Jan Reuvers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <script type="text/javascript" src="JavaScript.js"> </script>
+    <script async src="https://unpkg.com/ml5@0.1.3/dist/ml5.min.js"></script>
+
+
+
+    <!--Test
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <script>
+        function goFront() {
+            $.get("http://192.168.1.99/status1=0",
+                function (data) {
+                    alert("Data Loaded: " + data);
+                });
+        }
+
+        function goLeft() {
+            $.get("http://192.168.1.99/status1=1",
+                function (data) {
+                    alert("Data Loaded: " + data);
+                });
+        }
+
+    </script>
+    -->
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" >Smart Industry</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav nav" role="tablist">
+                <a class="nav-item nav-link" data-toggle="tab" href="#About" id="About-tab" role="tab" aria-controls="About" aria-selected="true">About <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#Start" id="Start-tab" role="tab" aria-controls="Start" aria-selected="true">Start</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#business" id="business-tab" role="tab" aria-controls="business" aria-selected="true">Business</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#connection" id="connection-tab" role="tab" aria-controls="connection" aria-selected="true">Connection</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#technology" id="technology-tab" role="tab" aria-controls="technology" aria-selected="true">Technology</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#project" id="project-tab" role="tab" aria-controls="project" aria-selected="true">Project</a>
+                <a class="nav-item nav-link" data-toggle="tab" href="#Contact" id="Contact-tab" role="tab" aria-controls="Contact" aria-selected="true">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tab-content container">
+        <div class="tab-pane active fade show" id="About" role="tabpanel" aria-labelledby="About-tab">
+            <section id="showcase">
+                <h1>Welkom op mijn pagina.</h1>
+
+            </section>
+
+            <div class="container">
+                <section id="main">
+                    <h1>Portfolio Jan Reuvers</h1>
+                    <p>Hallo mijn naam is Jan Reuvers, ik studeer momenteel een opleiding Elektrotechniek met de major Industriële Automatisering op de Avans Hogeschool in Den Bosch.<br>
+                        Hiervoor heb ik de opleiding Middenkader Engineering BOL niveau 4 gevolgd, waar ik de basis van de elektro geleerd heb. Deze opleiding was breed georiënteerd, 
+                        waardoor ik ervaring heb opgebouwd in de industriële automatisering, huisinstallatie's en embedded systems.<br>
+                        Doordat ik een metaal/elektro vmbo vooropleiding heb gedaan, kan ik ook metaal bewerken met onder andere cnc machines.<br>
+                        Ik ben leergierig, hard werkend en doe altijd mijn uiterste best om de doelen te halen die ik voor ogen heb. <br></p>
+                    <hr>
+                    <h3>Mijn sport/hobby pagina's</h3>
+                    <ul>
+                        <li>
+                            <a href="https://hbvstaddijk.nl/" target="_blank">Link naar mijn handboog club</a>
+
+                        </li>
+                        <li>
+                            <a href="https://www.nijmeegseschaatsvereniging.nl/index.php?page=7&sid=3" target="_blank">Link naar mijn shorttrack club</a>
+
+                        </li>
+                    </ul>
+
+                    
+                </section>
+                
+            </div>
+
+            <video width="400" controls>
+                <source src="Videos/ShorttrackHeerenveen.mp4" type="video/mp4">
+                Your browser does not support HTML5 video
+            </video>
+
+        </div>
+        <div class="tab-pane fade" id="Start" role="tabpanel" aria-labelledby="Start-tab" >
+
+            <h1>Smart Start</h1>
+            <p>Hieronder staan alle Smart Start opdrachten<br> </p>
+
+            <p>
+                <br>
+            </p>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>Week 6 visie vorming en bedrijfscultuur</h4></button>
+
+            <div class="content">
+                
+                <p>
+                    <br>
+                    Voordat een project begint, moet het team een visie hebben om een project tot een goed eind te brengen. Een belangrijk onderdeel om een goede visie te krijgen met het team is een goede bedrijfscultuur in het bedrijf hebben. 
+
+                </p>
+
+                <h5>Visievorming</h5>
+                <p>  
+                    Voor het maken van een project, moet elk lid van het team dezelfde visie hebben. Het is belangrijk dat het een visie is waar mensen enthousiast over zijn, zodat ze betere kwaliteit leveren. Voor het vinden van een gezamenlijke visie zijn een aantal stappen opgezet. Hieronder staan deze stappen kort uitgelegd zodat het team aanpassingen kan maken op hoe hun team het best functioneert.
+                    <br><br>
+                    Stap 1: 
+                    <br>
+                    Waarom begin je hier aan, wat is de meerwaarde van de visie en voor wie?
+                    <br>
+                    Wie praat waar over mee?
+                    <br>
+                    Waarmee ben je aan het eind tevreden?
+                    <br><br>
+
+                    Stap 2:
+                    <br>
+                    Informatie verzamelen over de visie.
+                    <br><br>
+
+                    Stap 3: Waar gaan we het over hebben/ hoe gaan we het doen?
+                    <br>
+                    Stel een planning op
+                    <br><br>
+
+                    Stap 4: Wat vinden we er van?
+                    <br>
+                    Bespreek de ideeën met elkaar.
+                    <br><br>
+
+                    Stap 5: Keuzes maken
+                    <br><br>
+
+                    Stap 6: Deel je ideeën
+                    <br>
+                    Presenteer wat je gevonden hebt.
+                    <br>
+
+                </p> 
+
+                <h5>Bedrijfscultuur</h5>
+                <p> 
+                    Wat een bedrijfscultuur is, is een lastig fenomeen om uit te leggen. Een bedrijfscultuur is een zeer breed begrip maar het komt voornamelijk neer op de organisatie als sociale groep. De cultuur van een organisatie wordt ook wel ‘de ziel van de onderneming’ genoemd. Dit komt doordat een bedrijfscultuur de prestaties en daarmee de resultaten van een onderneming beïnvloedt.
+                    <br>
+                    Voordat je bij een bedrijf gaat werken is het belangrijk dat je erachter komt wat voor een bedrijfscultuur de organisatie heeft. De belangrijkste manier om dit te doen is vragen hoelang en hoe vaak de werknemers overwerken, waarop wordt ik beoordeeld (kwaliteit of snelheid), wordt er veel vergaderd en hoe staat het bedrijf in de markt. Doormiddel van deze vragen kom je er achter of het bedrijf bij jou past en of jij je op je gemak voelt.
+
+                </p>    
+                
+                <h5>Conclusie</h5>
+                <p> 
+                    Het belangrijkste is de bedrijfscultuur, zonder dit komt wordt geen goede kwaliteit geleverd. Indien het bedrijf de juiste cultuur heeft, dan is het belangrijk om elk lid van een team met de neuzen de goede kant op te zetten. Dit heeft als voordeel dat de leden elkaar versterken in plaats van tegen weken.
+                    <br>
+
+                </p> 
+
+
+                <h4>Bibliografie</h4>
+                
+                    <a href="https://leerling2020.nl/visievorming-5-tips/" target="_blank">5 tips voor visievorming. (sd). Opgehaald van leerling2020: https://leerling2020.nl/visievorming-5-tips/<br><br></a>
+
+                    <a href="https://www.lokale-democratie.nl/sites/default/files/2019-09/Bouwstenen%20Visievorming.pdf" target="_blank">Bouwstenen Visievorming. (sd). Opgehaald van lokale-democratie: https://www.lokale-democratie.nl/sites/default/files/2019-09/Bouwstenen%20Visievorming.pdf<br><br></a>
+
+                    <a href="https://www.stepstone.nl/cmsnl/Carriere-Advies/Artikels/hoe-je-een-bedrijfscultuur-herkent.cfm" target="_blank">Hoe je een bedrijfscultuur herkent. (sd). Opgehaald van stepstone: https://www.stepstone.nl/cmsnl/Carriere-Advies/Artikels/hoe-je-een-bedrijfscultuur-herkent.cfm<br><br></a>
+                
+                       
+                <img src="Images/Visie.png" alt="ShowcaseFactory" style="width: 70%; height: 70%;">
+                
+                <p>
+                    <br>
+                </p>
+
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+                <p>
+                    <br>
+                </p>
+            </div>
+
+            
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>Week 5 Smart Factories / Organisaties</h4></button>
+
+            <div class="content">
+                
+                
+                <h5>Wat is platform business model</h5>
+                <p>  
+                    Een platform is een business model dat waarde creëert door verkoop mogelijk te maken tussen twee verschillende groepen, deze groepen zijn meestal klant en bedrijf. Om te kunnen verkopen, wordt gebruik gemaakt van grote netwerken. Een platform maakt gemeenschappen en markten zodat de gebruikers met elkaar kunnen communiceren. Verschillende platform bedrijven die voor een connectie tussen klant en bedrijf verzorgen zijn bijvoorbeeld Facebook, Uber en Alibaba.
+                    <br><br>
+                    Een platform business model bestaat al sinds het begin van de menselijke beschaving. In die tijd was het beter bekend als een marktplein met kraampjes en veiling huizen.
+                    <br>
+
+                </p> 
+
+                <h5>Supply chain</h5>
+                <p> 
+                    De verbinding tussen klant en bedrijf wordt steeds beter, zodat de klant meer vertrouwen heeft in de verkopen. Om beter inzicht te krijgen in de supply chain heb ik een onderzoek gedaan naar het optimaliseren van een supply chain en het in het kort vermeld met een aantal video’s.
+                    <br><br>
+                    Het belangrijkste is dat De klant doormiddel van smart technology zoals een smartphone direct verbinding heeft met de verkoper. Hierdoor kan de klant bijvoorbeeld direct zien op welke boot en met welke maatschappij zin product is geleverd. Voor de connectie wordt gebruik gemaakt van internet en voor het opslaan van al deze data wordt gebruik gemaakt van een groot database, dus het onderdeel “Big data” komt er bij kijken.
+                    <br><br>
+                    <a href="https://www.canva.com/design/DADnOExp0so/Ay0XFOo7NaSXlxxkAyxoDg/view?utm_content=DADnOExp0so&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton#1" target="_blank">optimaliseren van een supply chain <br><br></a>
+               
+                </p>    
+               
+                
+                <h5>Conclusie</h5>
+                <p> 
+                    Een platform business model creert waarde door verkoop mogelijk te maken tussen klant en bedrijf. De communicatie tussen klant en bedrijf is zeer belangrijk, deze communicatie wordt ook wel supply chains genoemd. Grote bedrijven zoals amazon en alibaba zijn goede voorbeelden hiervan. Deze bedrijven zorgen dat de klant bij zoveel mogelijk data van het product kan, zodat de klant antwoord weet op de vragen zoals wat, waar, hoe en wanneer.
+                    <br>
+
+                </p> 
+
+
+                <h4>Bibliografie</h4>
+                
+                    <a href="https://www2.deloitte.com/ch/en/pages/innovation/articles/platform-business-model-explained.html" target="_blank">platform business model explained. (n.d.). Opgehaald van deloitte: https://www2.deloitte.com/ch/en/pages/innovation/articles/platform-business-model-explained.html<br><br></a>
+
+                    <a href="https://en.wikipedia.org/wiki/Platform_economy" target="_blank">Platform economy. (n.d.). Opgehaald van wikipedia: https://en.wikipedia.org/wiki/Platform_economy<br><br></a>
+
+                    <a href="https://www.applicoinc.com/blog/what-is-a-platform-business-model/" target="_blank">what is a platform business model. (n.d.). Opgehaald van applicoinc: https://www.applicoinc.com/blog/what-is-a-platform-business-model/<br><br></a>
+                
+
+                
+                <img src="https://2xawx0gmudy471po527lbxcd-wpengine.netdna-ssl.com/wp-content/uploads/2016/05/four-functions-of-a-platform-business-model-3-768x394.jpg" alt="four-functions-of-a-platform-business-model" style="width: 60%; height: 70%;">
+                <span style="color: #3366ff;">The four functions of the platform business model.</span>
+
+                <img src="https://2xawx0gmudy471po527lbxcd-wpengine.netdna-ssl.com/wp-content/uploads/2016/03/platform-core-transaction.png" alt="platform-core-transaction" style="width: 50%; height: 50%;">
+                <span style="color: #3366ff;">Platform core transaction.</span>
+
+                <p>
+                    <br>
+                </p>
+
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+                <p>
+                    <br>
+                </p>
+            </div>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>Week 5 technologie en supply chains</h4></button>
+
+            <div class="content">
+                
+                <p>
+                    <br>
+                    Pindakaas met of zonder toegevoegde suiker, met of zonder biologische pinda’s. Pindakaas met kleine stukjes pinda, met grote stukjes pinda of zonder stukjes pinda. Consumenten willen steeds meer verschillende dingen en voornamelijk ook zelf kunnen kiezen wat ze kopen en niet alleen voedsel. Voorheen ging je naar je dorp of stad en kocht je daar wat je nodig hebt. Als je nu iets nodig hebt ga je op zoek achter de computer bij google. Welk bedrijf heeft precies wat jij wilt en welke is het goedkoopst. 
+
+                </p>
+
+                <h5>Digital supply lines</h5>
+                <p>  
+                    De impact van digitale technologie bij bedrijven is gigantisch, maar het moeilijke hiervan is om de bedrijven zover te krijgen dat ze het gaan gebruiken. Het gebruik van “de cloud” heeft het verkoop via internet mogelijk gemaakt wat veel voordelen heeft. Al deze data kan worden opgeslagen waardoor het gemakkelijker is geworden om onderzoek te doen naar het koopgedrag van klanten. Hiermee kan een bedrijf zien wat het mist en welke producten winst maken.
+
+                </p> 
+                <h5>Verschillen</h5>
+                <p> 
+                    Er zijn verschillende bedrijven met verschillende ‘producten’ om te verkopen neem bijvoorbeeld Amazon en Uber. Amazon maakt gebruik van de cloud om veel verschillende kleine bedrijven hun producten te laten verkopen op hun site. Hierdoor kan de klant veel verschillende producten goedkoop en op één plaats vinden. Uber verzameld de data van taxi’s om zo de ideale manier van betalen te ontwikkelen. Hierdoor betalen de burgers die gebruik maken van taxi’s nooit te veel.
+
+                </p>    
+                
+                <h5>Conclusie</h5>
+                <p> 
+                    Het gebruik van onder andere de cloud maakt het voor bedrijven gemakkelijker om hun producten te verkopen. Elk bedrijf heeft een eigen manier van optimaliseren van hun supply line en heeft dus ook andere techniek nodig. Door deze technologie kan er beter voldaan worden aan wat de klant vraagt. Het grootste probleem is dat de bedrijven eerst geld moeten uitgeven om het werkend te krijgen en de werknemers zover krijgen dat ze er mee gaan werken.
+                    <br><br>
+
+                </p> 
+
+
+                <h4>Bibliografie</h4>
+                
+                    <a href="https://www.theguardian.com/business/2019/jul/28/amazon-small-business-benefits" target="_blank">amazon small business benefits. (n.d.). Retrieved from theguardian: https://www.theguardian.com/business/2019/jul/28/amazon-small-business-benefits<br><br></a>
+
+                    <a href="https://www.logistiek.nl/supply-chain/blog/2014/05/ict-voor-supply-chains-ideale-toekomst-of-geldverspilling-101131284?vakmedianet-approve-cookies=1" target="_blank">ict voor supply chains. (n.d.). Retrieved from logistiek: https://www.logistiek.nl/supply-chain/blog/2014/05/ict-voor-supply-chains-ideale-toekomst-of-geldverspilling-101131284?vakmedianet-approve-cookies=1<br><br></a>
+
+                    <a href="https://www.logistiek.nl/supply-chain/nieuws/2019/09/noodzaak-voor-digitalisering-van-supply-chains-groeit-101169537" target="_blank">noodzaak voor digitalisering van supply chains. (n.d.). Retrieved from logistiek: https://www.logistiek.nl/supply-chain/nieuws/2019/09/noodzaak-voor-digitalisering-van-supply-chains-groeit-101169537<br><br></a>
+                
+                    <a href="https://www.bitsight.com/blog/what-is-digital-supply-chain-management" target="_blank">what is digital supply chain management. (n.d.). Retrieved from bitsight: https://www.bitsight.com/blog/what-is-digital-supply-chain-management<br><br></a>
+
+                       
+                <img src="Images/Supply chain management.jpg" alt="ShowcaseFactory" style="width: 70%; height: 70%;">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/63wt3TgGGxI">
+
+                </iframe>
+
+                <p>
+                    <br>
+                </p>
+
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+                <p>
+                    <br>
+                </p>
+            </div>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>Week 4 Manufacturing Processen</h4></button>
+
+            <div class="content">
+                
+                <p>
+                    <br>
+                    Bij industrie wordt gedacht aan grote fabrieken, productie lijnen, continu het zelfde werk, maar de grote vraag is: wat is smart industy. Bij smart technology denk je aan hightech, zelf rijdende auto’s, robots en de rest van de mogelijkheden. Maar kan een fabriek ook smart gemaakt worden?
+
+                </p>
+
+                <h5>Het bedrijf</h5>
+                <p>  
+                    Het bedrijf “SEW-Eurodrive” heeft een fabriek waar hun productielijn veel smart technology geïmplementeerd heeft. Het implementeren hiervan wordt ook wel industry 4.0 genoemd. Om de slimme technologie toe te kunnen passen wordt gebruik gemaakt van de LEAN methode. Dit wordt gebruikt, omdat ze moeten bekijken waar hun knelpunten zitten en wat ze moeten oplossen of gemakkelijk maken. SEW heeft momenteel voornamelijk gekeken naar het logistieke gedeelte van het bedrijf, maar het is een goed begin. Het bedrijf wilt graag dat al hun producten “first time right” gemaakt worden. Dit betekend dat hun proces zo geoptimaliseerd moet zijn dat de werknemers geen fouten maken tijdens het assembleren van de producten. In de video staat een voorbeeld hoe het assembleren van een motor reductor gemakkelijker gemaakt is met behulp van transport robots.
+
+                </p> 
+                <h5>Lean</h5>
+                <p> 
+                    procesverbeteren.nl geeft aan: “Lean concentreert zich op het maximaliseren van de ‘waardestroom’ richting de klant. Hiertoe worden allereerst - per productfamilie - de waarde toevoegende activiteiten in kaart gebracht. Dit gebeurt via een stroomschema oftewel value stream map. Vervolgens worden per voortbrengingsketen de waarde toevoegende stappen geleidelijk steeds beter op elkaar afgestemd. Tegelijkertijd worden zaken die tijd of materialen verspillen teruggedrongen.”. Bij SEW is ondervonden dat het verplaatsen van de motoren, reductors en hun overige producten intensief was en zwaar werk voor de mensen. Met behulp van Lean is dit probleem gevonden en opgelost.
+                    
+                </p>    
+                <h5>Agile</h5>
+                <p> 
+                    Een mooi voorbeeld van niet Agile is de productie van de T-Ford. Dit was een grote fabriek die dezelfde auto met dezelfde kleur produceert. Om al de geproduceerde auto’s die aan te wachten waren op een klant op te slaan was weer veel ruimte nodig. Tegenwoordig willen de klanten een auto met hun uitbereidingen en kleur het liefst diezelfde dag hebben. Als producent heb je dan veel opslag nodig, of het wordt op een andere manier opgelost. SEW heeft de oplossing gevonden om van een levertijd van 3 weken naar 3 dagen te verminderen. Dit gebeurt door batch productie (veel achterelkaar produceren) in te wisselen voor enkelstuksproductie en ‘stromend’ produceren. procesverbeteren.nl geeft aan: “Het vloeroppervlak van de fabriek werd bovendien met meer dan de helft gereduceerd. Tussenvoorraden zijn vrijwel verdwenen, alle onderdelen liggen nu als grijpvoorraad bij productie-eilanden. Nog één laatste feitje: het werk wordt nu met minder dan de helft van de mensen gedaan, in vergelijking met 2002”.
+
+                </p> 
+                <h5>Conclusie</h5>
+                <p> 
+                    SEW is een bedrijf wat gebruik maakte van batch productie en veel opslagruimte. Door gebruik te maken van de Lean methode zijn ze achter het probleem gekomen waarom de levertijden zo lang waren. Het probleem van de lange levertijd hebben ze opgelost door hun fabriek Agile te maken. Hierdoor heeft SEW vele voordelen zoals de fabriek is met de helft van de oppervlakte gereduceerd en met de helft van het aantal werknemers.
+                    <br><br>
+
+                </p> 
+
+                <h4>Bibliografie</h4>
+                
+                    <a href="https://www.procesverbeteren.nl/LEAN/LeanEvent2014_SEW_DE_Oobeya.php" target="_blank">LeanEvent2014 SEW. (sd). Opgehaald van procesverbeteren: https://www.procesverbeteren.nl/LEAN/LeanEvent2014_SEW_DE_Oobeya.php<br><br></a>
+
+                    <a href="https://www.procesverbeteren.nl/LEAN/leanmanufacturing.php" target="_blank">leanmanufacturing. (sd). Opgehaald van procesverbeteren: https://www.procesverbeteren.nl/LEAN/leanmanufacturing.php<br><br></a>
+
+                    <a href="https://www.sew-eurodrive.nl/company/your_success/future_trends/industry_40/3_showcase_factory/showcase_factory.html#panel-5dfa8977-b925-44a7-bdaf-bf9866dc26e5-2" target="_blank">showcase factory. (sd). Opgehaald van sew-eurodrive: https://www.sew-eurodrive.nl/company/your_success/future_trends/industry_40/3_showcase_factory/showcase_factory.html#panel-5dfa8977-b925-44a7-bdaf-bf9866dc26e5-2<br><br></a>
+
+                <p>
+                    <br>
+                </p>
+                       
+                <img src="Images/Lean.jpg" alt="Lean" style="width: 40%; height: 40%;">
+                <img src="Images/ShowcaseFactory.jpg" alt="ShowcaseFactory" style="width: 40%; height: 40%;">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hoONqYX61Hg">
+
+                </iframe>
+
+                <p>
+                    <br>
+                </p>
+            </div>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 4: Procesinrichting</h4></button>
+
+            <div class="content">
+                <h5><br> Procesoptimalisatie en risicomanagement tijdens de studie</h5> 
+                <p>
+                    Tijdens mijn studie is er weinig aandacht besteed aan het verbeteren van een proces in het management gebied. De reden hiervoor is dat de studie gericht is op het optimaliseren van een PLC programma. Een Proces optimaliseren zodat er geen mensen meer aan te pas komen is wat de opleiding in het kort inhoud. Dit is anders als het  procesoptimalisatie waar over gesproken wordt tijdens de minor wat inhoud om een bepaald proces aan te passen zodat het minder tijd en materiaal kost. Deze manier is richting de bedrijfskunde gericht waardoor ik hier weinig vanaf weet. De LEAN methode heb ik gehoord tijdens mijn stage, maar alles wat ik hiervan weet is dat het de manier van werken zou moeten verbeteren.
+                </p>
+
+                <h5>Nieuwste wetenschappelijke in de procesoptimalisatie en risicomanagement</h5>
+                <p>  
+                    Voor het optimaliseren van een proces zijn verschillende methodes bedacht. De  namen van deze methodes zijn: Lean, TOC, QRM, Six Sigma, TPM en Agile.
+                    Volgens Dr. Ir. Jaap van Ede verbeteren al deze methodes op dezelfde manier: hypothesevorming, testen en continu aanpassen. Elk procesverbetermethode maakt gebruik van het volgende stappenplan: 1.Observeren 2.Vragen 3.Hypothese 4.Experimenten 5.Checkt. Elke methode stelt dezelfde typen vragen en het gaat steeds over varianten op: hoe kan ik de waarde creatie vergroten. Concreet betekent dit: alleen produceren als er een klantvraag is, kosten verlagen, verspillingen wegnemen, doorlooptijd verkorten en de fouten reduceren.
+                </p> 
+                <h5>Betekenis in de praktijk</h5>
+                <p> 
+                    Een duidelijk beeld van procesoptimalisatie ziet u in de bijgevoegde video. Zodra de klant een vraag heeft, wordt het proces gestart. Hierbij wordt gekeken of meerdere PCB ontwerpen op een grote plaat gezet kunnen worden om verspilling weg te nemen. Het controleren of alle PCB’s functioneren wordt elke PCB getest door een robot om de arbeidskosten te verlagen. In de gehele fabriek wordt gebruik gemaakt van robots om fouten te verminderen en om sneller de producten te fabriceren.
+                    <br><br>
+
+                </p>    
+
+                <h4>Bibliografie</h4>
+                
+                    <a href="https://www.twynstraguddekennisbank.nl/risicomanagement/de-stappen-binnen-risicomanagement" target="_blank">de stappen binnen risicomanagement. (2019, 9 24). Opgehaald van twynstraguddekennisbank: https://www.twynstraguddekennisbank.nl/risicomanagement/de-stappen-binnen-risicomanagement<br><br></a>
+
+                    <a href="http://www.leanblack.nl/lean-six-sigma/procesoptimalisatie.htm" target="_blank">Procesoptimalisatie. (2019, 9 24). Opgehaald van leanblack: http://www.leanblack.nl/lean-six-sigma/procesoptimalisatie.htm<br><br></a>
+
+                    <a href="https://www.procesverbeteren.nl/selectie_methodes/Wetenschappelijke_methode_procesverbeteren.php" target="_blank">Wetenschappelijke methode procesverbeteren. (2019, 9 24). Opgehaald van procesverbeteren: https://www.procesverbeteren.nl/selectie_methodes/Wetenschappelijke_methode_procesverbeteren.php<br><br></a>
+
+                                                                                     
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ljOoGyCso8s">
+
+                </iframe>
+
+                <p>
+                    <br>
+                </p>
+            </div>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 3: Value proposition</h4></button>
+
+            <div class="content">
+                <p>
+                    <br> 
+                    Value proposition is een methode wat een gedeelte van het “business model canvas” uitbreid. Hierbij wordt een duidelijk en uitgebreid schema gemaakt van het gedeelte “waarde propositie”. Met het value proposition design wordt gekeken naar wat de klant werkelijk wilt. Dat wat de klant wilt en niet wilt, wordt in een visueel model gezet zoals in figuur 1. Nadat gekeken is wat een klant wilt, wordt er gekeken hoe deze verwachtingen/eisen gewaarborgd en aangevuld kunnen worden door het bedrijf.
+                    <br><br>
+                    Het voordeel van dit model is dat het bedrijf gedwongen wordt om kort en bondig te formuleren. Het verhaal van een klant kan in je hoofd een logisch verhaal zijn, maar zodra het opgeschreven moet worden kan het anders staan als verwacht. Het is dus het beste om eerst te kijken naar de klant en wat deze wilt voordat je de oplossingen gaat bedenken.
+                    <br><br>
+                    Een stap verder is het bekijken of de vraag van de klant een competitieve voordeel heeft voor het bedrijf. Dit kan aan de hand van een verdiepend model (zie figuur 2). Met dit model kan het bedrijf de belangrijkste meldingen en mogelijke velden voor verbeteringen identificeren. De onderdelen die hieruit ontstaan hebben mogelijk een grote impact en zouden in de toekomst aangepakt kunnen worden.
+                    <br><br>
+                </p>
+
+                <h4>Bibliografie</h4>
+                
+                    <a href="https://www.b2binternational.com/research/methods/faq/what-is-the-value-proposition-canvas/" target="_blank">value proposition canvas. (2019, 9 18). Opgehaald van b2binternational: https://www.b2binternational.com/research/methods/faq/what-is-the-value-proposition-canvas/<br><br></a>
+
+                    <a href="https://www.sprout.nl/artikel/strategie/zo-werkt-value-proposition-design" target="_blank">zo werkt value proposition. (2019, 9 18). Opgehaald van sprout: https://www.sprout.nl/artikel/strategie/zo-werkt-value-proposition-design<br><br></a>
+
+
+
+                <img src="Images/value proposition.jpg" alt="value proposition" style="width: 40%; height: 40%;">
+                <img src="Images/company advantage.jpg" alt="company advantage" style="width: 40%; height: 40%;">
+
+                <p>
+                    <br>
+                </p>
+            </div>
+            <hr>
+            
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 2: Smart research workflow</h4></button>
+
+            <div class="content">
+                <p>
+                    <br> 
+                    Hoe ziet mijn smart research workflow eruit:
+                    Tijdens mijn opleiding heb ik veel tijd besteed aan het voorbereiden van hoe de software voor een machine of productielijn geschreven moet worden. Hiervoor zijn er verschillende manieren aangeleerd waarbij het GAMP-V model vooraan staat. 
+                    <br><br>
+
+                    Bij het gebruik van het GAMP-V model wordt eerst een “User requirements specification” aangemaakt, waarna dit gecontroleerd wordt door het bedrijf en in mijn geval door mij en mijn projectgroep. Nadat alles op papier staat wat de bedoeling is, wordt de hardware en software gescheiden gespecificeerd en ook gecontroleerd. Als dit alles gemaakt is, wordt het project gestart en ontstaat er een functionerende machine. De functionaliteiten worden eerst gecontroleerd door het bedrijf en stelt hier een document van op waarna het opgeleverd wordt aan de klant. Hierna wordt de machine verscheept naar de klant en wordt er nogmaals gecontroleerd op alle functionaliteiten.
+                    <br><br>
+                
+                    Dit GAMP-V model is dat wat ik graag gebruik bij het maken van een project. Voor het onderzoeken naar informatie op het internet, maak ik gebruik van de google Chrome extensie Diigo. Dit is een extensie die je in Chrome installeert en je kunt er webpagina’s mee opslaan en de belangrijke punten bij onderstrepen. Later kun je de opgeslagen pagina’s gemakkelijk terug vinden en de belangrijke punten in de verschillende pagina’s bij elkaar voegen om het onderzoek naar informatie gemakkelijker te maken.
+                    <br><br>
+                
+                    Dus hoe mijn ideale research workflow eruit ziet is met behulp van bijvoorbeeld diigo voor het verzamelen van veel informatie op het internet, zodat ik hiermee de belangrijke informatie op een plaats heb staan en dit gemakkelijk kan scheiden naar de informatie die later gebruikt kan worden. Nadat de informatie gevonden is, kan ik dit implementeren in het project wat als opzet gebruik maakt van het GAMP-V model.
+                    <br><br>
+                
+                    Tijdens de minor heb ik andere manieren gevonden van workflow, maar hier ben ik niet bekent mee. Er wordt veel gepraat over Scrum, maar hier heb ik weinig van gehoord tijdens mijn opleiding. Na het kijken van een video, lijkt het erg op de workflow van het GMAP-V model, maar ik ben zeker geïnteresseerd om meer over Scrum te gaan leren.
+                    <br><br>
+                </p>
+
+                <p>
+                    <br>
+                </p>
+            
+            </div>
+            <hr>
+            
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 1: Kruispunten tussen smart industry en mijn studie:</h4></button>
+
+            <div class="content">
+                <p>
+                    <br> 
+                    Tijdens de lessen die ik gehad heb op het Avans waar de studie Industriële automatisering gegeven wordt, hebben we het regelmatig over waar de industrie in de toekomst heen gaat. Om meer informatie hierover te vergaren heb ik een minor gekozen welke gaat over de toekomst van de automatisering en fabrieken.
+                    <br><br>
+                    Tijdens een van de lessen hebben we het gehad over onderdelen wat een fabriek zou kunnen verbeteren in het kader van smart technology. Na een onderzoek ben ik erachter gekomen dat de onderdelen waar deze minor op gefocust is, dezelfde manieren gebruikt als wat ik gehad heb tijdens mijn studie. Het “Foutloos produceren” is waar de studie op gefocust is. De onderdelen “Big Data” en “The Cloud” is een groot onderdeel wat de studie industriële automatisering over gaat. Het “IoT” en “robotisering” is over gesproken en ik weet wat het is, maar de verdieping hierin mist nog. De overige thema’s “Block chain” en “3D printing” is geen onderdeel van de studie, maar het trekt wel mijn aandacht.
+                    <br><br>
+                    Na een literatuur onderzoek naar de verschillende smart industry thema’s heb ik ondervonden dat de onderdelen “Big data”, “IoT” en cloud technology precies hetzelfde is zoals ik het gelezen, geleerd en gebruikt heb tijdens mijn school periode. Het blockchain principe trekt mijn aandacht, omdat het nieuw is en ik hier geen verstand van heb. Ik ben dus erg benieuwd wat ik hiervan tijdens de minor ga meekrijgen.
+                    <br>
+                </p>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
+
+            <h1>Smart Business</h1>
+            <p>Hieronder staan alle Smart Business opdrachten<br> </p>
+
+            <p>
+                <br>
+            </p>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 4: Lean parameters en Elk</h4></button>
+
+            <div class="content">
+                <h5><br> De 5 parameters van lean:</h5> 
+                <p>
+                    Tijdens het onderwerp smart business is het onderdeel Lean te spraken gekomen. Om dit beter te begrijpen en waarom bedrijven hier meer mee gaan werken, heb ik onderzoek gedaan naar Lean. Om een bedrijf beter op zichzelf te laten functioneren, zijn er verschillende methodes bedacht om dit te bereiken. Voor het verbreden van de kennis in Lean is een bedrijf gevraagd hoe ze Lean toepassen in hun bedrijf. In dit verslag wordt gefocust op het onderwerp Lean, de 5 parameters hiervan en hoe het bedrijf “Elk” dit toepast.
+                </p>
+
+                <h5>Flow</h5>
+                <p>  
+                    Deze stap wordt ook “identify value” genoemd. Hier wordt gekeken naar de producten of service van het bedrijf vanuit de ogen van een klant gekeken met de vraag hoe het bedrijf het kan verbeteren. Dit helpt om dat te vinden wat het bedrijf speciaal maakt.
+                    <br><br>
+                    “Elk” heeft sinds het begin gefocust op het schilderen, maar kwam al snel achter dat dit niet goed genoeg is. Ze zijn gaan kijken wat ze kunnen verbeteren en ondervonden dat de mensen geen motivatie hadden om te werken en dat alleen schilderen niet genoeg was om de crisis te doorstaan.
+                </p> 
+
+                <h5>Customer</h5>
+                <p>  
+                    Als je concreet ondervonden hebt wat een bedrijf wilt en doet kun onderzocht worden, hoe daar te komen. Met behulp van “value stream mapping” hiermee kan een team/bedrijf begrijpen hoe een project door het bedrijf loopt en nog belangrijker, waar het vast loopt. Het product van deze stap is een duidelijke map van de organisatie waar elke stap van het proces staat en hoe het verloopt.
+                    <br><br>
+                    “Elk” heeft ondervonden dat uiteindelijk maar 7% van alle informatie die de klant geeft op het ontwerp terecht komt. Dit is zeer weinig, waardoor het project veel meer/minder werk te verduren heeft en dus duurder voor het bedrijf wordt.
+
+                </p>  
+                <h5>Process</h5>
+                <p>  
+                    Met de map die bij de vorige stap gemaakt is, kan gekeken worden naar hoe het proces geoptimaliseerd kan worden. Een Lean team kan de flow van alles verbeteren, dus niet alleen het producerende gedeelte, maar ook bijvoorbeeld de klant communicatie. Bekijk waar inefficiëntie, wrijving en vast lopers zitten in het huidige proces.
+                    <br><br>
+                    “Elk” heeft is volgorde van het project achterna gegaan en zijn tot de ontdekking gekomen dat de projecten “over de muur gegooid worden”. Tussen de verschillende afdelingen is dus geen of weinig communicatie waardoor de informatie verloren gaat.
+
+                </p> 
+                <h5>Supplier</h5>
+                <p>  
+                    Deze stap wordt “establish pull” genoemd. Hier wordt gekeken naar wanneer de klant het product werkelijk wilt. Het idee hierachter is om de klant de mogelijkheid te geven om aan de waarde te trekken zoals hij wilt. In plaats van veel op voorraad te hebben voor een order, moet er gekeken worden naar wat een klant direct nodig zou hebben en wat op bestelling verstuurd kan worden.
+                    <br><br>
+                    “Elk” wilde van hun voorraad af, want producten die staan leveren geen geld op en kost ruimte. Ze hebben gekeken wat direct nodig kan zijn en dit zo min mogelijk gemaakt en de producten wat direct besteld kan worden staat niks meer van in het magazijn. Hierdoor heeft het bedrijf minder opslagruimte nodig en worden de onderdelen direct vanuit de leverancier geleverd bij de projecten.
+
+                </p> 
+                <h5>Workforce</h5>
+                <p>  
+                    De laatste stap voor het lean proces is eigenlijk een “continuous improvement. Hier wordt gezocht naar wat de meest efficiënte procedure is en deze wordt steeds uitgebreid en veranderd. De waarde wordt steeds verhoogd in termen van minder kosten, tijd, producten gebruik, opslag, enz. 
+                    <br><br>
+                    “Elk” blijft bezig met onderzoeken naar hoe hun werk proces verbeterd kan worden en ze staan open voor nieuwe ideeën hoe hun efficiëntie omhoog gebracht kan worden.
+
+                </p> 
+                <h5>Feedback excursie</h5>
+                <p>  
+                    De gehele excursie was leerzaam en niet alleen voor het Lean proces, maar ook hoe je een bedrijf kunt verbeteren inclusief de werkwijze van werknemers. De presentatie van elk was uiterst interessant en het heeft nieuwe ideeën geopend bij mij die ik later en nu kan gaan gebruiken.
+                    <br><br>
+                    De Scrum presentatie was niet heel aantrekkelijk of interessant waardoor ik mijn aandacht snel verloor. De opdrachten en het gebruik van scrum tijdens de opdrachten was een zeer goede toevoeging tot het binden van de groep en ook zeer leerzaam. De scrum uitleg is dus een goede toevoeging!
+                    <br><br>
+                    Ik vond de gehele dag een goede toevoeging voor de minor.
+                </p> 
+
+                <h4>Bibliografie</h4>
+                
+                    <a href="https://leankit.com/learn/lean/5-principles-of-lean/" target="_blank">5 principles of lean. (sd). Opgehaald van leankit: https://leankit.com/learn/lean/5-principles-of-lean/<br><br></a>
+
+                    <a href="https://www.elk.nl/" target="_blank">elk. (sd). Opgehaald van elk: https://www.elk.nl/<br><br></a>
+
+                    <a href="https://drive.google.com/file/d/1I10eBrCel6gGM4KwY_t3q_Li9nYmnBAP/view" target="_blank">Elsevier. (sd). Production Economics. Opgehaald van https://drive.google.com/file/d/1I10eBrCel6gGM4KwY_t3q_Li9nYmnBAP/view<br><br></a>
+
+                                                                                     
+
+                <img src="Images/LeanPrinciples.png" alt="LeanPrinciples" style="width: 40%; height: 40%;">
+                <img src="Images/Continu verbeteren.jpg" alt="Continu verbeteren" style="width: 40%; height: 40%;">
+                <img src="Images/Opzet Elk.jpg" alt="Opzet Elk" style="width: 40%; height: 40%;">
+                <img src="Images/IdeeVoorElk.jpg" alt="IdeeVoorElk" style="width: 40%; height: 40%;">
+
+                <p>
+                    <br>
+                </p>
+            </div>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 2: Kosten verlagen voor verzekeraars</h4></button>
+
+            <div class="content">
+                <p>
+                    Verzekeraars krijgen hun inkomsten door middel van premiebetalingen. Het is voor de verzekeraar dus belangrijk dat de klant geen schade maakt, zodat er meer verdient kan worden.
+                    <br><br>
+                    Het is dus in het voordeel van de verzekeraar als er data verzameld gaat worden om de ongevallen te voorkomen. Tegenwoordig is bijna overal een apparaat wat verbinding heeft met de Cloud met genoeg sensoren om de data te verzamelen en te versturen.
+                    <br><br>
+                    Deze verzamelde data kan ook gebruikt worden om tips te versturen naar de klant zodat deze zijn leef wijze kan verbeteren en dus veiliger omgaat. Zo kan ook op de belangrijke bezittingen van een klant een sensor geplaatst worden, zodat deze gevold kan worden in geval van diefstal. Hiernaast kan de data ook gebruikt worden om andere verzekeringen en adviezen te versturen om zo de business te verbreden.
+                    <br><br>
+                    De verzamelde data heeft ook een keerzijde voor de klant tijdens bijvoorbeeld het auto rijden. Door de hoeveelheid verzamelde data, kunnen er ook boetes uitgeschreven worden bij het overschreden van de maximale toegestane snelheid op wegen.
+                    <br>
+                </p>
+
+                <h4>Bibliografie</h4>
+                
+                    <a href="https://www.mckinsey.com/industries/financial-services/our-insights/digital-ecosystems-for-insurers-opportunities-through-the-internet-of-things" target="_blank">digital ecosystems for insurers. (2019, 9 12). Opgehaald van mckinsey: https://www.mckinsey.com/industries/financial-services/our-insights/digital-ecosystems-for-insurers-opportunities-through-the-internet-of-things<br><br></a>
+
+                    <a href="https://www.frankwatching.com/archive/2018/11/28/internet-of-things-kansen-en-bedreigingen-voor-verzekeraars/" target="_blank">kansen en bedreigingen voor verzekeraars. (2019, 9 12). Opgehaald van frankwatching: https://www.frankwatching.com/archive/2018/11/28/internet-of-things-kansen-en-bedreigingen-voor-verzekeraars/<br><br></a>
+
+
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="connection" role="tabpanel" aria-labelledby="connection-tab">
+
+            <h1>Smart connection</h1>
+            <p>Hieronder staan alle Smart connection opdrachten<br> </p>
+
+            <p>
+                <br>
+            </p>
+            
+            <hr>
+
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 6: afbeelding herkennen</h4></button>
+
+            <div class="content">
+                <div class="card mx-5">
+                  <p>Indien hieronder geen afbeelding staat, open de pagina dan in microsoft Edge.</p>
+                    <!--<form action="/action_page.php">
+                      First name: <input type="text" name="fname"><br>
+                      Last name: <input type="text" name="lname"><br>
+                      <input type="submit" value="Submit">
+                    </form>-->
+                  <img src="Images/AfbeeldingHerkennen.jpg" class="card-img-top img-fluid" id="image" crossorigin="anonymous">
+                    <!--<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">-->
+                  <div class="card-body">
+                    <blockquote class="blockquote">
+                    <p class="mb-0">The MobileNet model labeled this as
+                      <span class="font-weight-bolder" id="result">...</span> with a confidence of
+                      <span class="font-weight-bolder" id="probability">...</span>
+                    </p>
+                    </blockquote>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="myClassifier()" id="btn-detect">Detect Objects</button>
+                    </div>
+                    
+                  </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 6: Mogelijkheden voor machine learning</h4></button>
+
+            <div class="content">
+                <p>
+                    Machinelearning wordt steeds meer gebruikt, omdat dit de toekomst is. Een goed voorbeeld om te laten zien wat machine learning is, is een computer die het eerste level van het spel ‘the Worlds Hardest Game’ probeert te halen. Hierin worden meerdere oplossingen aangeboden en telkens wordt de beste gekozen om zo  verder te gaan.
+
+                </p>
+
+                <h5>Robots</h5>
+                <p>  
+                    Om robot armen iets simpels te laten doen zoals het dicht vouwen van een boek word veel geoefend. Na veel ‘trail and error’ kan de robot iets simpels, maar het is natuurlijk de bedoeling dat deze net zo slim worden als de mens.
+                    <br>
+                    Een mooi begin is het overnemen van de customer service. Hiervoor kan een chatbot gebruikt worden die luistert naar wat de klant zegt en deze de juiste richting heen stuurt of de klant met de juiste persoon in contact brengt.
+
+                </p> 
+
+                <h5>Conclusie</h5>
+                <p>  
+                    Machine learning wordt de toekomst, maar het is nog ver van werkend. Er zijn verschillende toepassingen die gebruikt worden, maar hier wordt nog menselijke opzichter bij indien het fout gaat.
+                    <br>
+                </p> 
+
+
+                <h4>Bibliografie</h4>
+                
+                    <a href="https://www.youtube.com/watch?v=Yo2SepcNyw4" target="_blank">AI Learns to play the Worlds Hardest Game. (n.d.). Retrieved from youtube: https://www.youtube.com/watch?v=Yo2SepcNyw4<br><br></a>
+
+                    <a href="https://www.zendesk.nl/blog/machine-learning-used-customer-service/" target="_blank">machine learning used customer service. (n.d.). Retrieved from zendesk: https://www.zendesk.nl/blog/machine-learning-used-customer-service/<br><br></a>
+
+                    <a href="https://www.youtube.com/watch?v=HX6M4QunVmA" target="_blank">The Robot Revolution: The New Age of Manufacturing | Moving Upstream. (n.d.). Retrieved from youtube: https://www.youtube.com/watch?v=HX6M4QunVmA<br><br></a>
+
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rP8CGyDbxBY">
+
+                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Yo2SepcNyw4">
+
+                </iframe>
+
+            </div>
+
+            <hr>
+                     
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 5: Json weather</h4></button>
+
+            <div class="content">
+                <div class="weatherBody">     
+                    <div id="weather">
+                        <div id="description"></div>
+                        <h1 id="temp"></h1>
+                        <div id="location"></div>
+                    </div>
+
+                    <script lang="text/javascript">
+                        weatherBalloon(2744514);
+                    </script>
+
+                    <p>
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 3: Java in HTML</h4></button>
+
+            <div class="content">
+                        
+                <a href="#" class="ConWeek2" onclick="alert(JavaAdd(3, 4))">druk hier om te zien hoeveel 3+4 is!!</a>
+
+                <p>
+                    <br>
+                </p>
+
+                <button type="button" onclick="JavaGetDate()"> Klik hier om de huidige datum en tijd te zien.</button>
+                <div id="CurrentTime">
+                    <p> Klik op de knop om de tijd te zien</p>
+                </div>
+            
+                <p>
+                    <br>
+                </p>
+
+                <h4>Is het tijd voor bier?<br> </h4>
+
+            
+                <div id="ItIsTime">
+                    <p>Er is een fout ontstaan in het programma.</p> 
+                </div>
+
+                <script type="text/javascript">
+                    BeerTime();
+                
+                </script>
+                <p>
+                    <br>
+                </p>
+            </div>
+
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 2: begin van HTML gemaakt</h4></button>
+
+            <div class="content">
+
+                <p>Start van de site gemaakt. Dit wordt gedurende de opleiding verbetert</p>
+
+                <p>
+                    <br>
+                </p>
+            </div>
+            <hr>
+
+            <button type="button" class="collapsible" onclick="collapsible()"><h4>week 1: ontwerp website</h4></button>
+
+            <div class="content">
+
+                <img src="Images/week1.jpg" alt="opdracht week1" style="width: 70%; height: 70%;">
+            </div>
+            <hr />
+
+            <p>
+                <br>
+            </p>
+
+        </div>
+        <div class="tab-pane fade" id="technology" role="tabpanel" aria-labelledby="technology-tab">
+            <h1>Potplant automatisering</h1>
+
+            <h3>week 4-6: ontwerpen op breadboard</h3>
+            <p>Om alle draden weg te werken wordt er eerst een ontwerp gemaakt van de printplaat. zie afbeelding</p>
+            
+            <!--<img src="Images/potplant.jpg" alt="opzet breadboard" style="width: 50%; height: 50%;">-->
+          <!-- <table style="width:100%;">
+                <caption>
+                    <h1><strong>WEB BASED - LED CONTROL</strong></h1>
+                </caption>
+                <tr>
+                    <td class="auto-style1">
+                        <input height="325px" onclick="goFront();" src="images/lightbulb_On.ico" type="image" width="325px" />
+                    </td>
+                    <td rowspan="3">
+                        <input height="325px" onclick="goLeft();" src="images/lightbulb_Off.ico" type="image" width="325px" />
+                    </td>
+            </table>-->
+
+            <p>
+                <br>
+            </p>
+
+            <hr />
+
+            <h3>week 1-4: ontwerpen op breadboard</h3>
+            <p>Tijdens deze periode zijn we met dit vak bezig om een printplaat te ontwerpen voor het automatiseren van een potplant met behulp van een Arduino</p>
+
+            <img src="Images/potplant.jpg" alt="opzet breadboard" style="width: 50%; height: 50%;">
+
+        </div>
+        <div class="tab-pane fade" id="project" role="tabpanel" aria-labelledby="project-tab">
+            <h1>Slim maken van een silo bij "Het Internethuis"</h1>
+
+            <h3>Het project begint in week 6.</h3>
+
+        </div>
+        <div class="tab-pane fade" id="Contact" role="tabpanel" aria-labelledby="Contact-tab">
+            <h1>contact</h1>
+
+            <aside id="blackContainer">
+                <h1>Contactgegevens</h1>
+                <p>
+                    leeftijd: 23 jaar<br>
+                    Plaats: Wijchen<br>
+                    Opleiding: industiële automatisering<br>
+                    vooropleiding: Electrotechniek BOL4<br>
+                </p>
+            </aside>
+
+        </div>
+    </div>
+
+
+    <!-- FOR BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Test-->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <script>
+          function current_state() {
+            btn = $('#toggle');
+            light = $('#light');
+            log = $('#log');
+            $.ajax({
+              url: 'toggle.php?current',
+              method: 'get',
+              success: function(data){
+                if(data==1){
+                  btn.data('state', '0');
+                  light.addClass('on');
+                  light.removeClass('off');
+                  btn.addClass('btn-danger');
+                  btn.removeClass('btn-success');
+                  btn.html('Turn Off');
+                }else{
+                  btn.data('state', '1');
+                  light.addClass('off');
+                  light.removeClass('on');
+                  btn.addClass('btn-success');
+                  btn.removeClass('btn-danger');
+                  btn.html('Turn On');
+                }
+              }
+            });
+            $.ajax({
+              url: 'toggle.php?log',
+              method: 'get',
+              success: function(data){
+                var lines = data.split('\n');
+                lines.reverse();
+                var result = '';
+                for(var i = 0;i < lines.length;i++){
+                  if (lines[i] != ''){
+                    var cells = lines[i].split('-');
+                    cell = '<tr>';
+                    for(var x = 0;x < cells.length;x++){
+                      cell = cell+'<td>'+cells[x]+'</td>';
+                    }
+                    cell = cell+'</tr>';
+                    result = result+cell;
+                  }
+                }
+                log.html(result);
+              }
+            });
+          }
+          $(document).ready(function(){
+            current_state();
+            setInterval(current_state, 1000);
+            $('#toggle').click(function(){
+              var current = $(this).data('state');
+              $.ajax({
+                url: 'toggle.php?state='+current,
+                method: 'get'
+              });
+            });
+          });
+    </script>-->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.srcset = lazyImage.dataset.srcset;
+                            lazyImage.classList.remove("lazy");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+
+            } else {
+            // Possibly fall back to a more compatible method here
+            }
+        });
+
+        function myClassifier() {
+            // The image we want to classify
+            const image = document.querySelector('#image');
+            // The result tag in the HTML
+            const result = document.getElementById('result');
+            // The probability tag in the HTML
+            const probability = document.getElementById('probability');
+            // Change button text
+            const button = document.getElementById('btn-detect');
+            button.innerText = "Wait ...."
+
+            // Initialize the Image Classifier method with MobileNet
+            const classifier = ml5.imageClassifier('MobileNet', function() {
+                console.log('Model Loaded!');
+          
+            });
+            // Make a prediction with the selected image
+            // This will return an array with a default of 10 options with their probabilities
+            classifier.predict(image, function(err, results) {
+                console.table(results);
+                result.innerText = results[0].className;
+                probability.innerText = results[0].probability.toFixed(4);
+                button.innerText = "Detect Objects"
+            });
+        }
+        
+      
+    </script>
+
+    <footer id="main-footer">
+        <p>Made by Jan Reuvers</p>
+    </footer>
+
+</body>
+</html>
+
