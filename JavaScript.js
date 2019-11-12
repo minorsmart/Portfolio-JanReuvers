@@ -91,14 +91,26 @@ function BeerTime() {
     }
 }
 
-function afbeeldingherkennen() {
+function ConvertImage() {
+    
     //var lblafbeelding;
     //lblafbeelding = document.getElementById('lblafbeelding').innerHTML;
     //document.getElementById('imageBox').src = lblafbeelding;
 
+    ////urlPath = address of your picture on internet
+    //URL = new URL(afbeelding.innerText);
+    //BufferedImage c = ImageIO.read(url);
+    //ImageIcon image = new ImageIcon(c);
+    //jXImageView1.setImage(image);
+
+    //URL url = new URL("http://www.mkyong.com/image/mypic.jpg");
+    //Image image = ImageIO.read(url);
+
+    var img = new Image;
+    img.src = document.getElementById('afbeelding').innerHTML;
 
     // The image we want to classify
-    const image = document.querySelector('#image');
+    const image = img;
     // The result tag in the HTML
     const result = document.getElementById('result');
     // The probability tag in the HTML
@@ -112,12 +124,78 @@ function afbeeldingherkennen() {
         console.log('Model Loaded!');
 
     });
+    //   const classifier = ml5.imageClassifier('DarkNet', function() {
+    //     console.log('Model Loaded!');
+    //   });
+
     // Make a prediction with the selected image
     // This will return an array with a default of 10 options with their probabilities
     classifier.predict(image, function (err, results) {
-        console.table(results);
-        result.innerText = results[0].className;
-        probability.innerText = results[0].probability.toFixed(4);
-        button.innerText = "Detect Objects"
+        try {
+            console.table(results);
+            result.innerText = results[0].className;
+            probability.innerText = results[0].probability.toFixed(4);
+
+            // Change button text
+            button.innerText = "Done"
+        } catch (e) {
+
+            // Change button text
+            button.innerText = "Error"
+        }
+
     });
+
+
+    //var timer = setInterval(function () { MyTimer() }, 200);
+    //function MyTimer() {
+    //    var ctx = canvas.getContext('2d');
+    //    ctx.drawImage(img, 0, 0, 500, 675);
+    //    img = new Image;
+    //    img.src = "http://yinoneliraz-001-site1.smarterasp.net/MyPicture.png";
+    //}
+        
+}
+
+function afbeeldingherkennen() {
+
+    //Dont forget to add ml5 script in the HTML
+
+    // The image we want to classify
+    const image = document.getElementById('image');
+    // The result tag in the HTML
+    const result = document.getElementById('result');
+    // The probability tag in the HTML
+    const probability = document.getElementById('probability');
+    // Change button text
+    const button = document.getElementById('btn-detect');
+    button.innerText = "Wait ...."
+
+    // Initialize the Image Classifier method with MobileNet
+    const classifier = ml5.imageClassifier('MobileNet', function() {
+        console.log('Model Loaded!');
+
+    });
+    //   const classifier = ml5.imageClassifier('DarkNet', function() {
+    //     console.log('Model Loaded!');
+    //   });
+
+    // Make a prediction with the selected image
+    // This will return an array with a default of 10 options with their probabilities
+    classifier.predict(image, function (err, results) {
+        try {
+            console.table(results);
+            result.innerText = results[0].className;
+            probability.innerText = results[0].probability.toFixed(4);
+
+            // Change button text
+            button.innerText = "Done"
+        } catch (e) {
+
+            // Change button text
+            button.innerText = "Error"
+        }
+        
+    });
+
 }

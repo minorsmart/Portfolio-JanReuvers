@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Image classification using MobileNet</h1>
+        <p>The MobileNet model labeled this as
+        <span id="result">...</span> with a confidence of
+        <span id="probability">...</span></p>
+
+        <video id="player" controls autoplay></video>
+        <button id="capture">Capture</button>
+        <!-- The canvas grabs a still from the video player -->
+        <!-- However, ML5 can not (yet) capture an image from a canvas tag, only from an img tag -->
+        <canvas id="canvas" width="320" height="240" crossorigin="anonymous" style="display: none"></canvas>
+        <!-- Therefor we hide the canvas and create an image tag with javascript -->
+        <!-- which will be placed within a div tag -->
+        <div id="captured"></div>
+        <script>
+            const player = document.getElementById('player');
+            const canvas = document.getElementById('canvas');
+            const context = canvas.getContext('2d');
+            const captureButton = document.getElementById('capture');
+
+            const constraints = {
+                video: true,
+            };
+            
+         // // We can take stills automatically
+            // var myVar = setInterval(myTimer, 10000);
+
+            // function myTimer() {
+            //     context.drawImage(player, 0, 0, canvas.width, canvas.height);
+            // }
+
+            captureButton.addEventListener('click', () => {
+                
+                // Draw the video frame to the canvas.
+                context.drawImage(player, 0, 0, canvas.width, canvas.height);
+                // Save image tot img tag
+                const img = canvas.toDataURL("image/png");
+                console.log(img)
+                document.getElementById('captured').innerHTML = '<img id="test" src=" ' + img + ' "/>'
+                // The image we want to classify
+                const image = document.getElementById('test');
+                // The result tag in the HTML
+                const result = document.getElementById('result');
+                // The probability tag in the HTML
+                const probability = document.getElementById('probability');
+
+                // No callback needs to be passed to use Promises.
+                ml5.imageClassifier('MobileNet')
+                .then(classifier => classifier.predict(image))
+                .then(results => {
+                    result.innerText = results[0].className;
+                    probability.innerText = results[0].probability.toFixed(4);
+                });
+
+            });
+
+            // Attach the video stream to the video element and autoplay.
+            navigator.mediaDevices.getUserMedia(constraints)
+                .then((stream) => {
+                player.srcObject = stream;
+                });
+        </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

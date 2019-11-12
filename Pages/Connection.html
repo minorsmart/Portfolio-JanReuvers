@@ -15,6 +15,9 @@
 
     <link rel="stylesheet" type="text/css" href="../StyleSheet.css" />
     <script type="text/javascript" src="../JavaScript.js"> </script>
+    
+    <!--Added script for image detection-->
+    <script src="https://unpkg.com/ml5@0.1.3/dist/ml5.min.js"></script>
 
 </head>
 <body>
@@ -42,31 +45,31 @@
         </button>
 
         <div class="content">
-            <div class="card mx-5">
-                <p>Indien hieronder geen afbeelding staat, open de pagina dan in microsoft Edge.</p>
-
+            <p>Indien hieronder geen afbeelding staat, open de pagina dan in microsoft Edge.<br />
                 
-                <!--<input type="text" name="Afbeelding url" value="https://www.w3schools.com/images/w3schools_green.jpg" id="afbeelding" />
-                <label for="afbeelding" id="lblafbeelding"></label><br />
-                <button type="button" onclick="collapsible()">submit</button>-->
+            </p>
 
+            <!--Does not work yet--> 
+            <!--
+            <p> Voeg een url link naar een afbeelding en druk op submit.</P>
+            <input type="text" name="Afbeelding url" value="https://5.imimg.com/data5/GV/DP/MY-3831378/500ml-plastic-water-bottle-500x500.jpg" id="afbeelding" style="width: 70%;"/>
+            <label for="afbeelding" id="lblafbeelding"></label><br />
+            <button type="button" onclick="ConvertImage()">submit</button>
 
-                <!--<img src="https://www.w3schools.com/images/w3schools_green.jpg" class="card-img-top img-fluid" id="image" crossorigin="anonymous">-->
+            <p></p>-->
 
-                <img src="../Images/AfbeeldingHerkennen.jpg" class="card-img-top img-fluid" id="image" crossorigin="anonymous">
-                <div class="card-body">
-                <blockquote class="blockquote">
-                <p class="mb-0">The MobileNet model labeled this as
-                    <span class="font-weight-bolder" id="result">...</span> with a confidence of
-                    <span class="font-weight-bolder" id="probability">...</span>
-                </p>
-                </blockquote>
-                <div class="text-center">
-                    <button type="button" class="btn btn-primary btn-lg" onclick="afbeeldingherkennen()" id="btn-detect">Detect Objects</button>
-                </div>
-                    
-                </div>
-            </div>
+            <!--<img src="https://www.w3schools.com/images/w3schools_green.jpg" class="card-img-top img-fluid" id="image" crossorigin="anonymous">-->
+            
+            <button type="button" class="btn btn-primary btn-lg" onclick="afbeeldingherkennen()" id="btn-detect">Detect Objects</button>
+
+            <p>The MobileNet model labeled this as
+            <span id="result">...</span> with a confidence of
+            <span id="probability">...</span></p>
+
+            
+            <img src="../Images/AfbeeldingHerkennen.PNG" class="card-img-top img-fluid" id="image" crossorigin="anonymous">
+               
+                     
         </div>
 
         <hr>
