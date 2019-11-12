@@ -90,3 +90,34 @@ function BeerTime() {
         document.getElementById('ItIsTime').innerHTML = "<p>Helaas, het is nog geen tijd voor bier. Het is nog te vroeg</p>"
     }
 }
+
+function afbeeldingherkennen() {
+    //var lblafbeelding;
+    //lblafbeelding = document.getElementById('lblafbeelding').innerHTML;
+    //document.getElementById('imageBox').src = lblafbeelding;
+
+
+    // The image we want to classify
+    const image = document.querySelector('#image');
+    // The result tag in the HTML
+    const result = document.getElementById('result');
+    // The probability tag in the HTML
+    const probability = document.getElementById('probability');
+    // Change button text
+    const button = document.getElementById('btn-detect');
+    button.innerText = "Wait ...."
+
+    // Initialize the Image Classifier method with MobileNet
+    const classifier = ml5.imageClassifier('MobileNet', function () {
+        console.log('Model Loaded!');
+
+    });
+    // Make a prediction with the selected image
+    // This will return an array with a default of 10 options with their probabilities
+    classifier.predict(image, function (err, results) {
+        console.table(results);
+        result.innerText = results[0].className;
+        probability.innerText = results[0].probability.toFixed(4);
+        button.innerText = "Detect Objects"
+    });
+}

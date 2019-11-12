@@ -33,9 +33,6 @@
         <p>Hieronder staan alle Smart connection opdrachten<br>
         </p>
 
-        <p>
-            <br>
-        </p>
 
         <hr>
 
@@ -47,25 +44,27 @@
         <div class="content">
             <div class="card mx-5">
                 <p>Indien hieronder geen afbeelding staat, open de pagina dan in microsoft Edge.</p>
-                <!--<form action="/action_page.php">
-                    First name: <input type="text" name="fname"><br>
-                    Last name: <input type="text" name="lname"><br>
-                    <input type="submit" value="Submit">
-                </form>-->
+
+                
+                <!--<input type="text" name="Afbeelding url" value="https://www.w3schools.com/images/w3schools_green.jpg" id="afbeelding" />
+                <label for="afbeelding" id="lblafbeelding"></label><br />
+                <button type="button" onclick="collapsible()">submit</button>-->
+
+
+                <!--<img src="https://www.w3schools.com/images/w3schools_green.jpg" class="card-img-top img-fluid" id="image" crossorigin="anonymous">-->
+
                 <img src="../Images/AfbeeldingHerkennen.jpg" class="card-img-top img-fluid" id="image" crossorigin="anonymous">
-                <!--<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">-->
                 <div class="card-body">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">
-                            The MobileNet model labeled this as
+                <blockquote class="blockquote">
+                <p class="mb-0">The MobileNet model labeled this as
                     <span class="font-weight-bolder" id="result">...</span> with a confidence of
                     <span class="font-weight-bolder" id="probability">...</span>
-                        </p>
-                    </blockquote>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-primary btn-lg" onclick="myClassifier()" id="btn-detect">Detect Objects</button>
-                    </div>
-
+                </p>
+                </blockquote>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary btn-lg" onclick="afbeeldingherkennen()" id="btn-detect">Detect Objects</button>
+                </div>
+                    
                 </div>
             </div>
         </div>
