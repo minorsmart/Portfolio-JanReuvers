@@ -48,11 +48,11 @@
         <h3>Mijn sport/hobby pagina's</h3>
         <ul>
             <li>
-                <a href="https://hbvstaddijk.nl/" target="_blank">Link naar mijn handboog club</a>
+                Link naar mijn <a href="https://hbvstaddijk.nl/" target="_blank">handboog club</a>
 
             </li>
             <li>
-                <a href="https://www.nijmeegseschaatsvereniging.nl/index.php?page=7&sid=3" target="_blank">Link naar mijn shorttrack club</a>
+                Link naar mijn <a href="https://www.nijmeegseschaatsvereniging.nl/index.php?page=7&sid=3" target="_blank">shorttrack club</a>
 
             </li>
         </ul>
@@ -138,6 +138,23 @@
 
         </div>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
 
 </body>
 </html>

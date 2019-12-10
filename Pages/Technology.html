@@ -35,15 +35,28 @@
         <p>Hieronder staat per week wat gedaan is voor het maken van een printplaat <br>
         </p>
 
+               
+<!--        <hr>
+
         <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 8-13 3D printen in het Fablab</h2>
+            <h2>Reflectie</h2>
         </button>
+
+        <div class="content">
+            
+            <p>Work in progress</p>
+
+        </div>-->
+
+        <hr>
+
+        <button class="collapsible">week 8-13 3D printen, Behuizing ontwerp</button>
 
         <div class="content">
 
             <p>
                 Voor het maken van een behuizing voor de ontworpen PCB, werdt begonnen met een cursus solidworks en op bezoek bij het Fablab. In het fablab staan verschillende 3D printers voor het printen van projecten voor de studenten.<br />
-                Doordat ik ervaring heb met solidworks, heb ik het eerste ontwerp snel afgerond en kan ik verder met het verbeteren van het ontwerp.
+                Doordat ik ervaring heb met solidworks, had ik het eerste ontwerp voor de 2e les afgerond en kan ik verder met het verbeteren van het ontwerp.
             
             </p>
             <img src="../Images/Fablab.PNG" alt="Fablab" style="width: 40%; height: 40%;">
@@ -53,9 +66,33 @@
         
         <hr>
 
+        <button class="collapsible">
+            Reflectie / competentie
+        </button>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>Week 4-8 PCB ontwerp</h2>
+        <div class="content">
+
+            <p>
+                
+                ontwerpen: past nieuwe technologieën op het gebied van van IoT, Robotica en 3D-printen toe op een praktijkcasus 
+
+                ontwerpen: plaatst de casus in een business context 
+
+                onderzoeken: vertaalt een praktijkcasus naar een onderzoeksplan, voert deze uit en evalueert de kwaliteit van uitvoering
+
+                Communiceren: communiceert op effectieve wijze zijn bevindingen naar verschillende doelgroepen
+
+
+            
+            
+            </p>
+
+        </div>
+
+        <hr>
+        
+        <button class="collapsible">
+            Week 4-8 PCB ontwerp
         </button>
 
         <div class="content">
@@ -71,8 +108,8 @@
         <hr>
 
         
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 1-4: ontwerpen op breadboard</h2>
+        <button class="collapsible">
+            week 1-4: ontwerpen op breadboard
         </button>
 
         <div class="content">
@@ -157,6 +194,23 @@
 
         </div>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
 
 </body>
 </html>

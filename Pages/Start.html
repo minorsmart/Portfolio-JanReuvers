@@ -35,9 +35,33 @@
         </p>
 
         <hr>
+
+        <button class="collapsible">
+            Reflectie / competentie
+        </button>
+
+        <div class="content">
+
+            <p>
                 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>Week 6 visie vorming en bedrijfscultuur</h2>
+                analyseren: beschrijft de mate van volwassenheid van een organisatie m.b.t. Smart Industry in een business case 
+                Zoals in "week 4 manufacturing processen" is het bedrijf SEW geanalyseerd naar het proces van dit bedrijf. Hierin staat kort vermeld welke limieten en voordelen het bedrijf heeft door hun proces te verbeteren. Ook in week 5 is het bedrijf Uber onderzocht naar hun digital supplylines. 
+                Door het onderzoeken van bedrijven tijdens deze minor ben ik erachter gekomen dat veel bedrijven bezig zijn met het verbeteren van hun processen om hun productie te verbeteren.
+            </p> <p>
+                communiceren: communiceert op effectieve wijze zijn bevindingen naar verschillende doelgroepen
+                Tijdens de opdrachten die voor dit onderwerp stonden 
+            </p> <p>
+                Professionaliseren: werkt actief aan zijn professionele ontwikkeling
+
+
+            </p>
+
+        </div>
+        
+        <hr>
+                
+        <button class="collapsible">
+            Week 6 visie vorming en bedrijfscultuur
         </button>
 
         <div class="content">
@@ -129,8 +153,8 @@
 
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>Week 5 Smart Factories / Organisaties</h2>
+        <button class="collapsible">
+            Week 5 Smart Factories / Organisaties
         </button>
 
         <div class="content">
@@ -200,8 +224,8 @@
 
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>Week 5 technologie en supply chains</h2>
+        <button class="collapsible">
+            Week 5 technologie en supply chains
         </button>
 
         <div class="content">
@@ -262,8 +286,8 @@
 
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>Week 4 Manufacturing Processen</h2>
+        <button class="collapsible">
+            Week 4 Manufacturing Processen
         </button>
 
         <div class="content">
@@ -317,8 +341,8 @@
 
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 4: Procesinrichting</h2>
+        <button class="collapsible">
+            week 4: Procesinrichting
         </button>
 
         <div class="content">
@@ -365,8 +389,8 @@
 
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 3: Value proposition</h2>
+        <button class="collapsible">
+            week 3: Value proposition
         </button>
 
         <div class="content">
@@ -405,8 +429,8 @@
         </div>
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 2: Smart research workflow</h2>
+        <button class="collapsible">
+            week 2: Smart research workflow
         </button>
 
         <div class="content">
@@ -437,8 +461,8 @@
         </div>
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 1: Kruispunten tussen smart industry en mijn studie:</h2>
+        <button class="collapsible">
+            week 1: Kruispunten tussen smart industry en mijn studie
         </button>
 
         <div class="content">
@@ -535,6 +559,23 @@
 
         </div>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
 
 </body>
 </html>

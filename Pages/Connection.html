@@ -19,6 +19,7 @@
     <!--Added script for image detection-->
     <script src="https://unpkg.com/ml5@0.1.3/dist/ml5.min.js"></script>
 
+
 </head>
 <body>
     <div class="navbar">
@@ -35,16 +36,30 @@
         <h1>Smart connection</h1>
         <p>Hieronder staan alle Smart connection opdrachten<br>
         </p>
+                
+        <hr>
 
+        <button class="collapsible">Reflectie / competentie</button>
+        <div class="content">
+            <p>
+                
+                ontwerpen: past nieuwe technologieën op het gebied van web, data, cloud en AI toe op een praktijkcasus
+
+                ontwerpen: plaatst de casus in een business context
+
+                Onderzoeken: vertaalt een praktijkcasus naar een onderzoeksplan, voert deze uit en evalueert de kwaliteit van uitvoering 
+
+                communiceren: communiceert op effectieve wijze zijn bevindingen naar verschillende doelgroepen
+
+            </p>
+
+        </div>
 
         <hr>
 
-
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 6: afbeelding herkennen</h2>
-        </button>
-
+        <button class="collapsible">week 6: afbeelding herkennen</button>
         <div class="content">
+
             <p>Indien hieronder geen afbeelding staat, open de pagina dan in microsoft Edge.<br />
                 
             </p>
@@ -65,20 +80,16 @@
             <p>The MobileNet model labeled this as
             <span id="result">...</span> with a confidence of
             <span id="probability">...</span></p>
-
             
-            <img src="../Images/AfbeeldingHerkennen.PNG" class="card-img-top img-fluid" id="image" crossorigin="anonymous">
-               
+            <img src="https://5.imimg.com/data5/GV/DP/MY-3831378/500ml-plastic-water-bottle-500x500.jpg" alt="Detect this image" id="image" crossorigin="anonymous" class="card-img-top img-fluid" style="width: 40%; height: 40%;">
                      
         </div>
 
         <hr>
-
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 6: Mogelijkheden voor machine learning</h2>
-        </button>
-
+        
+        <button class="collapsible">week 6: Mogelijkheden voor machine learning</button>
         <div class="content">
+        
             <p>
                 Machinelearning wordt steeds meer gebruikt, omdat dit de toekomst is. Een goed voorbeeld om te laten zien wat machine learning is, is een computer die het eerste level van het spel ‘the Worlds Hardest Game’ probeert te halen. Hierin worden meerdere oplossingen aangeboden en telkens wordt de beste gekozen om zo  verder te gaan.
 
@@ -120,12 +131,10 @@
         </div>
 
         <hr>
-
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 5: Json weather</h2>
-        </button>
-
+        
+        <button class="collapsible">week 5: Json weather</button>
         <div class="content">
+        
             <div class="weatherBody">
                 <div id="weather">
                     <div id="description"></div>
@@ -144,11 +153,8 @@
         </div>
 
         <hr>
-
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 3: Java in HTML</h2>
-        </button>
-
+        
+        <button class="collapsible">week 3: Java in HTML</button>
         <div class="content">
 
             <a href="#" class="ConWeek2" onclick="alert(JavaAdd(3, 4))">druk hier om te zien hoeveel 3+4 is!!</a>
@@ -184,22 +190,17 @@
         </div>
 
         <hr>
-
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 2: begin van HTML gemaakt</h2>
-        </button>
-
+        
+        <button class="collapsible">week 2: begin van HTML gemaakt</button>
         <div class="content">
 
             <p>Start van de site gemaakt. Dit wordt gedurende de opleiding verbetert</p>
 
         </div>
+
         <hr>
-
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 1: ontwerp website</h2>
-        </button>
-
+        
+        <button class="collapsible">week 1: ontwerp website</button>
         <div class="content">
 
             <img src="../Images/week1.jpg" alt="opdracht week1" style="width: 70%; height: 70%;">
@@ -280,6 +281,23 @@
 
         </div>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
 
 </body>
 </html>

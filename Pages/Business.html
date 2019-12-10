@@ -33,11 +33,34 @@
         <h1>Smart Business</h1>
         <p>Hieronder staan alle Smart Business opdrachten<br>
         </p>
+
+        <hr>
+
+        <button class="collapsible">
+            Reflectie / competentie
+        </button>
+
+        <div class="content">
+
+            <p>
+                
+                ontwerpen: ontwerpt bedrijfsprocessen volgens Smart Industry criteria
+
+                ontwerpen: beschrijft de implicaties voor het gehele business model en voor de positie van de organisatie in de keten 
+
+                Onderzoeken: vertaalt een praktijkcasus naar een onderzoeksplan, voert deze uit en evalueert de kwaliteit van uitvoering
+
+                Communiceren: communiceert op effectieve wijze zijn bevindingen naar verschillende doelgroepen
+            
+            
+            </p>
+
+        </div>
         
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>Week 8 bedrijfsbezoek bij NXP</h2>
+        <button class="collapsible">
+            Week 8 bedrijfsbezoek bij NXP
         </button>
 
         <div class="content">
@@ -53,8 +76,8 @@
         
         <hr>
         
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>Week 7 kook college</h2>
+        <button class="collapsible">
+            Week 7 kook college
         </button>
 
         <div class="content">
@@ -71,8 +94,8 @@
         </div>
         
         <hr>
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>Week 6 bedrijfsbezoek bij ATAG duiven</h2>
+        <button class="collapsible">
+            Week 6 bedrijfsbezoek bij ATAG duiven
         </button>
 
         <div class="content">
@@ -86,8 +109,8 @@
         
         <hr>
         
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 4: Hoe verander je naar Smart culture?</h2>
+        <button class="collapsible">
+            week 4: Hoe verander je naar Smart culture?
         </button>
 
         <div class="content">
@@ -104,8 +127,8 @@
 
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 4: Lean parameters en Elk</h2>
+        <button class="collapsible">
+            week 4: Lean parameters en Elk
         </button>
 
         <div class="content">
@@ -200,8 +223,8 @@
 
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 2: Smart products voor AXA</h2>
+        <button class="collapsible">
+            Week 2: Smart products voor AXA
         </button>
 
         <div class="content">
@@ -369,8 +392,8 @@
 
         <hr>
 
-        <button type="button" class="collapsible" onclick="collapsible()">
-            <h2>week 2: Kosten verlagen voor verzekeraars</h2>
+        <button class="collapsible">
+            week 2: Kosten verlagen voor verzekeraars
         </button>
 
         <div class="content">
@@ -475,6 +498,23 @@
 
         </div>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
 
 </body>
 </html>
