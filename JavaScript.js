@@ -62,8 +62,12 @@ function drawWeather(d) {
 //    weatherBallon(6167865);
 //}
 
-function JavaAdd(num1, num2) {
-    return num1 + num2;
+function JavaAdd() {
+    var x = document.getElementById('numberX').value
+    var y = document.getElementById("numberY").value
+    var z = x * 1 + y * 1;  /*Values times 1 to make it an integer*/
+
+    return "het antwoord is: " + z;
 
 }
 
